@@ -1,7 +1,7 @@
 //
 // Created by ruben on 6/10/19.
 //
-
+#include "Tipos.h"
 #include "Tierra.h"
 #include <string>
 #include <iomanip>
