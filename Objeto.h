@@ -1,37 +1,32 @@
 //
-// Created by ruben on 6/10/19.
+// Created by utec on 21/06/19.
 //
 
-#ifndef AGREGACION_OBJETO_H
-#define AGREGACION_OBJETO_H
+#ifndef GAME_OBJETO_H
+#define GAME_OBJETO_H
 
-
-#include <iostream>
 #include "Tipos.h"
-
-using namespace std;
 
 class Objeto {
 private:
-	string        nombre;
-	TipoCaracter  color;
-	TipoEntero    posX;
-	TipoEntero    posY;
+    string        nombre;
+    TipoCaracter  color;
+    TipoEntero    posX;
+    TipoEntero    posY;
 public:
-	Objeto();
-	Objeto(const TipoString& nombre, TipoCaracter color,
-		TipoEntero posX, TipoEntero posY);
-	virtual ~Objeto();
-	void setNombre(const TipoString& nombre);
-	string     getNombre();
-	TipoEntero getPosX();
-	TipoEntero getPosY();
-	char getColor();
-	void moverse(TipoEntero x, TipoEntero y);
-	string mostrarPosicion();
+    Objeto();
+    Objeto(const TipoString& nombre, TipoCaracter color,
+           TipoEntero posX, TipoEntero posY);
+    virtual ~Objeto();
+    void setNombre(const TipoString& nombre);
+    string     getNombre();
+    TipoEntero getPosX();
+    TipoEntero getPosY();
+    char getColor();
+    void moverse(TipoEntero x, TipoEntero y);
+    string mostrarPosicion();
 };
 
-#endif //AGREGACION_OBJETO_H
 
 
-
+#endif //GAME_OBJETO_H
